@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de endereços</title>
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
-</head>
-
-<body>
-    <div>
-        <label for="input_cep">Digite o seu CEP</label>
-        <input placeholder="Digite CEP" type="text" id="input_cep" />
-    </div>
-
-    <div>
-
-        <table border="1" id="tabela_cep">
-            <thead>
-                <tr>
-                    <th>CEP</th>
-                    <th>Cidade</th>
-                    <th>Bairro</th>
-                    <th>Rua</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
+  </head>
+  <body>
+    <label for="input_cep">Digite o seu CEP</label>
+    <input type="text" id="input_cep" />
+    <br>
+    <label for="input_estado">Estado: </label>
+    <input type="text" id="input_estado" />
+    <br>
+    <label for="input_cidade">Cidade: </label>
+    <input type="text" id="input_cidade" />
+    <br>
+    <label for="input_bairro">Bairro: </label>
+    <input type="text" id="input_bairro" />
+    <br>
+    <label for="input_rua">Rua: </label>
+    <input type="text" id="input_rua" />
+    <br>
+    <button id="salvar_endereco">Salvar Endereço</button>
+    <div id="lista_Endereços">
+        <table border="1" id="tabela_Endereços">
+            <tr>
+                <th>Estado</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+                <th>Rua</th>
+            </tr>
         </table>
-
     </div>
-
-</body>
-
+  </body>
 </html>
